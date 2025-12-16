@@ -1,0 +1,64 @@
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Espalha logo e links */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #f0f0f0; /* Cor escura moderna */
+    padding: 2.5rem 5%; /* Espaçamento interno */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3); /* Sombra suave */
+    position: sticky; /* Fixa no topo ao rolar */
+    top: 0;
+    z-index: 1000;
+}
+
+/* Estilo do Logo */
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+/* Lista de Links */
+.nav-links {
+    list-style: none;
+    display: flex; /* Coloca os links lado a lado */
+    gap: 30px; /* Espaço entre os links */
+}
+
+/* Links Individuais */
+.nav-links li a {
+    font-family: "PT Sans", sans-serif;
+
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #00bcd4; /* Cor de destaque ao passar o mouse */
+}
+
+/* Botão de Chamada para Ação (CTA) */
+.cta-button {
+    text-decoration: none;
+    background-color: #00bcd4;
+    color: #1a1a1a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0097a7;
+}
+
+/* Responsividade simples para telas menores */
+@media (max-width: 768px) {
+    .nav-links, .cta-button {
+        display: none; /* Esconde links em telas pequenas (celular) */
+    }
+    /* Aqui normalmente adicionamos o ícone de menu hambúrguer */
+}
