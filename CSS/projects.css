@@ -1,0 +1,88 @@
+/* Variáveis de Cores baseadas na referência */
+:root {
+    --vermelho-trilha: #c63d36;
+    --verde-trilha: #5cb85c;
+    --azul-trilha: #2d8a9e;
+}
+
+.container-projetos {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 5%;
+}
+
+.projeto-card {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+/* Inverte a posição da foto no segundo card */
+.projeto-card.reverse {
+    flex-direction: row-reverse;
+}
+
+.projeto-media {
+    flex: 1;
+    position: relative;
+}
+
+/* A moldura vermelha arredondada atrás da foto */
+.moldura-colorida {
+    position: relative;
+    background-color: var(--vermelho-trilha);
+    border-radius: 40px; /* Bordas bem redondas */
+    padding: 10px 0 0 10px; /* Cria o deslocamento */
+}
+
+.moldura-colorida img {
+    border-radius: 35px;
+    width: 100%;
+    display: block;
+}
+
+.projeto-info {
+    flex: 1.2;
+}
+
+.projeto-info h2 {
+    font-family: "Neucha", sans-serif;
+    color: var(--azul-trilha);
+    font-size: 2.5rem;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.projeto-info p {
+    font-family: "PT Sans", sans-serif;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Botão Verde Arredondado */
+.btn-verde {
+    display: inline-block;
+    background-color: var(--verde-trilha);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "PT Sans", sans-serif;
+    transition: transform 0.2s ease;
+}
+
+.btn-verde:hover {
+    transform: scale(1.05);
+}
+
+/* Responsividade para Celular */
+@media (max-width: 768px) {
+    .projeto-card, .projeto-card.reverse {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+}
