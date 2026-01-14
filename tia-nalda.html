@@ -24,15 +24,25 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">Tia Nalda</div>
+            <div class="logo-container">
+                <img src="IMAGES/ima1.png" alt="Logo II Edição Colônia da Tia Nalda" class="main-logo">
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
             <ul class="nav-links">
                 <li><a href="home.html">A Colônia</a></li>
                 <li><a href="tia-nalda.html">Tia Nalda</a></li>
-                <li><a href="#">Pastoril Menino Deus</a></li>
+                <!-- <li><a href="#">Pastoril Menino Deus</a></li> -->
                 <li><a href="projects.html">Projetos</a></li>
-                <li><a href="contact.html">Contato</a></li>
+                <!-- <li><a href="contact.html">Contato</a></li> -->
             </ul>
-            <a href="#" class="cta-button">Fale Comigo</a>
+
+            <a href="#" class="cta-button" style="visibility: hidden;">Fale Comigo</a>
         </nav>
     </header>
 
@@ -40,22 +50,67 @@
         <section class="container-projetos" style="margin-top: 60px;">
             <div class="projeto-card">
                 <div class="projeto-media">
-                    <div class="moldura-colorida" style="background-color: #ffca28;"> <img src="assets/reginalda.jpg" alt="Reginalda Alencar">
+                    <div class="moldura-colorida" style="background-color: #ffca28;">
+                        <img src="IMAGES/proponente.jpeg" alt="Reginalda Alencar" style="border-radius: 35px;">
                     </div>
                 </div>
                 <div class="projeto-info">
                     <h2>Reginalda Alencar</h2>
                     <h3 style="font-family: 'PT Sans'; color: #666; margin-bottom: 15px;">Proponente e Educadora</h3>
-                    
-                    <p>Reginalda Alencar é uma das principais referências na atuação cultural voltada à infância em Itatira/CE. Professora especializada em educação infantil e práticas lúdicas, ela dedica sua trajetória à formação de crianças por meio da arte e da cultura popular.</p>
+
+                    <p>Reginalda Alencar é uma das principais referências na atuação cultural voltada à infância em
+                        Itatira/CE. Professora especializada em educação infantil e práticas lúdicas, ela dedica sua
+                        trajetória à formação de crianças por meio da arte e da cultura popular.</p>
                     <br>
-                    <p><strong>Tradição e Cultura:</strong> Há mais de 40 anos, atua no tradicional <em>Pastoril Menino Deus</em>, contribuindo para a preservação das manifestações culturais do município.</p>
+                    <p><strong>Tradição e Cultura:</strong> Há mais de 40 anos, atua no tradicional <em>Pastoril Menino
+                            Deus</em>, contribuindo para a preservação das manifestações culturais do município.</p>
                     <br>
-                    <p>Na Colônia Tia Nalda, ela atua como proponente, produtora e educadora, articulando escolas e famílias para garantir que a cultura seja um direito e uma ferramenta de transformação social.</p>
+                    <p>Na Colônia Tia Nalda, ela atua como proponente, produtora e educadora, articulando escolas e
+                        famílias para garantir que a cultura seja um direito e uma ferramenta de transformação social.
+                    </p>
                 </div>
             </div>
         </section>
     </main>
 
-    </body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <footer class="site-footer">
+        
+        <div class="footer-institucional">
+            <div class="container">
+                <img src="IMAGES/tianalda.png" alt="Faixa de Apoio e Realização - Lei Aldir Blanc" class="banner-img">
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <div class="container grid-footer">
+                
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <p>Dúvidas sobre o projeto?</p>
+                    <p><i class="fas fa-envelope"></i> contato@seusite.com.br</p>
+                    <p><i class="fas fa-phone"></i> (88) 99999-9999</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-copyright">
+                <p>&copy; vinisantoszx. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="JS/navbar.js"></script>
+
 </html>

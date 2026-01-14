@@ -24,14 +24,22 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">Tia Nalda</div>
+            <div class="logo-container">
+                <img src="IMAGES/ima1.png" alt="Logo II Edição Colônia da Tia Nalda" class="main-logo">
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
 
             <ul class="nav-links">
                 <li><a href="home.html">A Colônia</a></li>
-                <li><a href="#">Tia Nalda</a></li>
-                <li><a href="#">Pastoril Menino Deus</a></li>
+                <li><a href="tia-nalda.html">Tia Nalda</a></li>
+                <!-- <li><a href="#">Pastoril Menino Deus</a></li> -->
                 <li><a href="projects.html">Projetos</a></li>
-                <li><a href="contact.html">Contato</a></li>
+                <!-- <li><a href="contact.html">Contato</a></li> -->
             </ul>
 
             <a href="#" class="cta-button" style="visibility: hidden;">Fale Comigo</a>
@@ -44,7 +52,7 @@
             <div class="projeto-card">
                 <div class="projeto-media">
                     <div class="moldura-colorida">
-                        <img src="assets/oficinas.jpg" alt="Crianças em oficina de arte">
+                        <img src="IMAGES/ima9.jpeg" alt="Crianças em oficina de arte">
                     </div>
                 </div>
                 <div class="projeto-info">
@@ -58,7 +66,7 @@
             <div class="projeto-card reverse">
                 <div class="projeto-media">
                     <div class="moldura-colorida" style="background-color: var(--azul-trilha);"> <img
-                            src="assets/inventario.jpg" alt="Crianças pesquisando">
+                            src="IMAGES/ima13.jpeg" alt="Crianças pesquisando">
                     </div>
                 </div>
                 <div class="projeto-info">
@@ -72,7 +80,7 @@
             <div class="projeto-card">
                 <div class="projeto-media">
                     <div class="moldura-colorida">
-                        <img src="assets/culminancia.jpg" alt="Apresentação cultural">
+                        <img src="IMAGES/ima8.jpeg" alt="Apresentação cultural">
                     </div>
                 </div>
                 <div class="projeto-info">
@@ -86,7 +94,7 @@
             <div class="projeto-card reverse">
                 <div class="projeto-media">
                     <div class="moldura-colorida" style="background-color: var(--verde-trilha);">
-                        <img src="assets/doc.jpg" alt="Cenas do documentário">
+                        <img src="IMAGES/ima14.jpeg" alt="Cenas do documentário">
                     </div>
                 </div>
                 <div class="projeto-info">
@@ -99,9 +107,44 @@
         </section>
     </main>
 
-    <footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
+    <footer class="site-footer">
+        
+        <div class="footer-institucional">
+            <div class="container">
+                <img src="IMAGES/tianalda.png" alt="Faixa de Apoio e Realização - Lei Aldir Blanc" class="banner-img">
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <div class="container grid-footer">
+                
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <p>Dúvidas sobre o projeto?</p>
+                    <p><i class="fas fa-envelope"></i> contato@seusite.com.br</p>
+                    <p><i class="fas fa-phone"></i> (88) 99999-9999</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-copyright">
+                <p>&copy; vinisantoszx. Todos os direitos reservados.</p>
+            </div>
+        </div>
     </footer>
 </body>
+
+<script src="JS/navbar.js"></script>
 
 </html>

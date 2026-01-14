@@ -23,14 +23,22 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">Tia Nalda</div>
+            <div class="logo-container">
+                <img src="IMAGES/ima1.png" alt="Logo II Edição Colônia da Tia Nalda" class="main-logo">
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
 
             <ul class="nav-links">
                 <li><a href="home.html">A Colônia</a></li>
                 <li><a href="tia-nalda.html">Tia Nalda</a></li>
-                <li><a href="#">Pastoril Menino Deus</a></li>
+                <!-- <li><a href="#">Pastoril Menino Deus</a></li> -->
                 <li><a href="projects.html">Projetos</a></li>
-                <li><a href="contact.html">Contato</a></li>
+                <!-- <li><a href="contact.html">Contato</a></li> -->
             </ul>
 
             <a href="#" class="cta-button" style="visibility: hidden;">Fale Comigo</a>
@@ -41,38 +49,85 @@
         <section class="hero-section" style="text-align: center; padding: 60px 5%; background-color: #fffaf0;">
             <h1 style="color: #c63d36; font-size: 3rem; margin-bottom: 20px;">A Colônia Tia Nalda</h1>
             <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto; color: #555;">
-                A II Edição da Colônia Tia Nalda: Comunidades de Terreiros Criativos é uma iniciativa cultural desenvolvida nas comunidades rurais de Itatira/CE. Com foco na infância, na inclusão social e na valorização da cultura popular, promovemos ações formativas e artísticas para crianças de 6 a 12 anos.
+                A II Edição da Colônia Tia Nalda: Comunidades de Terreiros Criativos é uma iniciativa cultural
+                desenvolvida nas comunidades rurais de Itatira/CE. Com foco na infância, na inclusão social e na
+                valorização da cultura popular, promovemos ações formativas e artísticas para crianças de 6 a 12 anos.
             </p>
         </section>
 
-        <section class="destaques" style="padding: 50px 10%; display: flex; gap: 30px; flex-wrap: wrap; justify-content: center;">
-            <div class="destaque-card" style="flex: 1; min-width: 300px; padding: 20px; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 20px;">
+        <section class="destaques"
+            style="padding: 50px 10%; display: flex; gap: 30px; flex-wrap: wrap; justify-content: center;">
+            <div class="destaque-card"
+                style="flex: 1; min-width: 300px; padding: 20px; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 20px;">
                 <h3 style="color: #2d8a9e; font-family: 'Neucha'; font-size: 1.8rem;">Cultura e Identidade</h3>
-                <p>Fortalecemos a identidade local e o sentimento de pertencimento através do Reisado Boi dos Caretas e outras tradições.</p>
-            </div>
-            
-            <div class="destaque-card" style="flex: 1; min-width: 300px; padding: 20px; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 20px;">
-                <h3 style="color: #5cb85c; font-family: 'Neucha'; font-size: 1.8rem;">Acessibilidade</h3>
-                <p>Garantimos vagas para crianças autistas, intérpretes de Libras e materiais com audiodescrição. A cultura é para todos!</p>
+                <p>Fortalecemos a identidade local e o sentimento de pertencimento através do Reisado Boi dos Caretas e
+                    outras tradições.</p>
             </div>
 
-            <div class="destaque-card" style="flex: 1; min-width: 300px; padding: 20px; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 20px;">
+            <div class="destaque-card"
+                style="flex: 1; min-width: 300px; padding: 20px; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 20px;">
+                <h3 style="color: #5cb85c; font-family: 'Neucha'; font-size: 1.8rem;">Acessibilidade</h3>
+                <p>Garantimos vagas para crianças autistas, intérpretes de Libras e materiais com audiodescrição. A
+                    cultura é para todos!</p>
+            </div>
+
+            <div class="destaque-card"
+                style="flex: 1; min-width: 300px; padding: 20px; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 20px;">
                 <h3 style="color: #c63d36; font-family: 'Neucha'; font-size: 1.8rem;">Bolsa Incentivo</h3>
-                <p>Valorizamos o protagonismo infantil com uma bolsa de incentivo para cada criança que participa integralmente das oficinas.</p>
+                <p>Valorizamos o protagonismo infantil com uma bolsa de incentivo para cada criança que participa
+                    integralmente das oficinas.</p>
             </div>
         </section>
 
-        <section class="apoio-section" style="background-color: #f4f4f4; padding: 40px; text-align: center; margin-top: 50px;">
+        <section class="apoio-section"
+            style="background-color: #f4f4f4; padding: 40px; text-align: center; margin-top: 50px;">
             <h4 style="margin-bottom: 20px; color: #666;">Realização e Apoio</h4>
             <p style="font-size: 0.9rem; color: #777; max-width: 900px; margin: 0 auto;">
-                Este projeto é apoiado pela Secretaria da Cultura do Estado do Ceará (Secult-CE), através da Política Aldir Blanc de Fomento à Cultura (MinC), com apoio do Departamento de Cultura de Itatira e escolas municipais parceiras.
+                Este projeto é apoiado pela Secretaria da Cultura do Estado do Ceará (Secult-CE), através da Política
+                Aldir Blanc de Fomento à Cultura (MinC), com apoio do Departamento de Cultura de Itatira e escolas
+                municipais parceiras.
             </p>
-            </section>
+        </section>
     </main>
 
-    <footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
+    <footer class="site-footer">
+
+        <div class="footer-institucional">
+            <div class="container">
+                <img src="IMAGES/tianalda.png" alt="Faixa de Apoio e Realização - Lei Aldir Blanc" class="banner-img">
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <div class="container grid-footer">
+
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <p>Dúvidas sobre o projeto?</p>
+                    <p><i class="fas fa-envelope"></i> contato@seusite.com.br</p>
+                    <p><i class="fas fa-phone"></i> (88) 99999-9999</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-copyright">
+                <p>&copy; vinisantoszx. Todos os direitos reservados.</p>
+            </div>
+        </div>
     </footer>
 </body>
+
+<script src="JS/navbar.js"></script>
 
 </html>

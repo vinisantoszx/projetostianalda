@@ -1,3 +1,128 @@
-h1 {
-    font-family: "Neucha", sans-serif;
+/* =========================================
+   VARIÁVEIS (Paleta de Cores)
+   ========================================= */
+:root {
+    --cor-primaria: #c63d36;   /* Vermelho Terra */
+    --cor-secundaria: #2d8a9e; /* Azul Turquesa */
+    --cor-terciaria: #5cb85c;  /* Verde Esperança */
+    --cor-fundo: #fffaf0;      /* Creme suave (Papel) */
+    --cor-texto: #555555;      /* Cinza Escuro */
+    --cor-titulo: #333333;     /* Preto Suave */
+    --branco: #ffffff;
+    
+    --fonte-titulos: 'Neucha', cursive;
+    --fonte-corpo: 'Arimo', sans-serif;
+}
+
+/* =========================================
+   HOME / MAIN (CSS/home.css)
+   ========================================= */
+
+/* Hero Section */
+.hero-section {
+    padding: 80px 20px !important; /* !important para sobrescrever o inline se necessário */
+    background: linear-gradient(to bottom, #fffaf0, #fff5e0);
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-family: var(--fonte-titulos);
+    font-size: 3.5rem !important;
+    color: var(--cor-primaria) !important;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+}
+
+.hero-section p {
+    font-size: 1.3rem !important;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--cor-texto);
+}
+
+/* Destaques (Cards) */
+.destaques {
+    padding: 60px 20px !important;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.destaque-card {
+    background: var(--branco) !important;
+    padding: 30px !important;
+    border-radius: 20px !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08) !important;
+    flex: 1;
+    min-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 5px solid transparent; /* Linha colorida na base */
+    text-align: center;
+}
+
+/* Cores específicas para as bordas dos cards */
+.destaque-card:nth-child(1) { border-color: var(--cor-secundaria); }
+.destaque-card:nth-child(2) { border-color: var(--cor-terciaria); }
+.destaque-card:nth-child(3) { border-color: var(--cor-primaria); }
+
+.destaque-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12) !important;
+}
+
+.destaque-card h3 {
+    font-family: var(--fonte-titulos) !important;
+    font-size: 2rem !important;
+    margin-bottom: 15px;
+}
+
+.destaque-card p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Apoio Section */
+.apoio-section {
+    background-color: #eaeaea !important;
+    padding: 60px 20px !important;
+    border-top: 1px solid #ddd;
+}
+
+.apoio-section h4 {
+    font-family: var(--fonte-titulos);
+    font-size: 1.8rem;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem !important;
+    }
+
+    .grid-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-col p, .social-links {
+        justify-content: center;
+    }
 }

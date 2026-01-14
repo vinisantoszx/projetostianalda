@@ -1,0 +1,115 @@
+/* =========================================
+   FOOTER (CSS/footer.css)
+   ========================================= */
+.site-footer {
+    width: 100%;
+    font-family: var(--fonte-corpo);
+    margin-top: 0;
+}
+
+/* Parte Institucional (Imagem) */
+.footer-institucional {
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-top: 4px solid var(--cor-primaria); /* Detalhe visual */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-institucional .container {
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.banner-img {
+    max-width: 100%;
+    height: auto;
+    /* max-height: 100px;  Ajuste se a imagem ficar muito alta */
+    display: block;
+}
+
+/* Parte de Informações (Escuro) */
+.footer-info {
+    background-color: #2e2e2e;
+    color: #f1f1f1;
+    padding-top: 50px;
+}
+
+.grid-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-col h4 {
+    font-family: var(--fonte-titulos);
+    color: var(--cor-secundaria); /* Usa o azul turquesa */
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.footer-col p {
+    color: #ccc;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-col i {
+    color: var(--cor-secundaria);
+    width: 20px;
+    text-align: center;
+}
+
+/* Redes Sociais */
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: #444;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--cor-primaria); /* Hover Vermelho */
+    transform: scale(1.1);
+}
+
+/* Copyright */
+.footer-copyright {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    border-top: 1px solid #333;
+}
+
+
+@media (max-width: 768px) {
+    .grid-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-col p, .social-links {
+        justify-content: center;
+    }
+}
