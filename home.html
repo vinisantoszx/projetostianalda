@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="CSS/home.css">
     <link rel="stylesheet" href="CSS/header.css">
     <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/carrosel.css">
 
     <!-- LINKS EXTERNOS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,6 +49,92 @@
     </header>
 
     <main>
+        <section class="galeria-section">
+            <h2
+                style="text-align: center; color: #c63d36; font-family: 'Neucha'; font-size: 2.5rem; margin-bottom: 30px;">
+                Momentos da Colônia
+            </h2>
+
+            <div class="carrossel-container">
+                <button class="prev-btn" onclick="mudarSlide(-1)">&#10094;</button>
+
+                <div class="slides-wrapper">
+
+                    <div class="slide fade">
+                        <img src="IMAGES/ima8.jpeg" alt="Turma reunida com bonecos">
+                        <div class="legenda">A alegria da turma reunida</div>
+                    </div>
+
+                    <div class="slide fade">
+                        <img src="IMAGES/ima9.jpeg" alt="Oficina de bonecos">
+                        <div class="legenda">Mão na massa: criando arte</div>
+                    </div>
+
+                    <div class="slide fade">
+                        <img src="IMAGES/5E2A7138.jpg" alt="Sanfoneiro tocando para as crianças">
+                        <div class="legenda">Música e tradição ao vivo</div>
+                    </div>
+
+                    <div class="slide fade">
+                        <img src="IMAGES/5E2A4103.jpg" alt="Crianças apresentando teatro de bonecos">
+                        <div class="legenda">Teatro de bonecos: criatividade em cena</div>
+                    </div>
+
+                    <div class="slide fade">
+                        <img src="IMAGES/5E2A3929.jpg" alt="Crianças fantasiadas cantando">
+                        <div class="legenda">Cores e cantos da nossa cultura</div>
+                    </div>
+
+                    <div class="slide fade">
+                        <img src="IMAGES/5E2A3983.jpg" alt="Artista com chapéu colorido falando">
+                        <div class="legenda">Contação de histórias e magia</div>
+                    </div>
+
+                    <div class="slide fade">
+                        <img src="IMAGES/5E2A7109.jpg" alt="Tia Nalda falando ao microfone">
+                        <div class="legenda">Tia Nalda conduzindo com carinho</div>
+                    </div>
+
+                    <div class="slide fade">
+                        <img src="IMAGES/ima12.jpeg" alt="Pesquisa casa de farinha">
+                        <div class="legenda">Valorizando nossa cultura local</div>
+                    </div>
+
+                    <div class="slide fade">
+                        <img src="IMAGES/proponente.jpeg" alt="Reginalda com bonecos">
+                        <div class="legenda">A arte dos Mamulengos</div>
+                    </div>
+
+                    <div class="slide fade">
+                        <img src="IMAGES/5E2A3822.jpg" alt="Crianças sentadas em roda">
+                        <div class="legenda">Momentos de aprendizado e escuta</div>
+                    </div>
+
+                    <div class="slide fade">
+                        <img src="IMAGES/5E2A4109.jpg" alt="Crianças brincando com fitas">
+                        <div class="legenda">Brincadeiras e movimento</div>
+                    </div>
+
+                </div>
+
+                <button class="next-btn" onclick="mudarSlide(1)">&#10095;</button>
+            </div>
+
+            <div style="text-align:center; margin-top: 15px;">
+                <span class="dot" onclick="slideAtual(1)"></span>
+                <span class="dot" onclick="slideAtual(2)"></span>
+                <span class="dot" onclick="slideAtual(3)"></span>
+                <span class="dot" onclick="slideAtual(4)"></span>
+                <span class="dot" onclick="slideAtual(5)"></span>
+                <span class="dot" onclick="slideAtual(6)"></span>
+                <span class="dot" onclick="slideAtual(7)"></span>
+                <span class="dot" onclick="slideAtual(8)"></span>
+                <span class="dot" onclick="slideAtual(9)"></span>
+                <span class="dot" onclick="slideAtual(10)"></span>
+                <span class="dot" onclick="slideAtual(11)"></span>
+            </div>
+        </section>
+
         <section class="hero-section" style="text-align: center; padding: 60px 5%; background-color: #fffaf0;">
             <h1 style="color: #c63d36; font-size: 3rem; margin-bottom: 20px;">A Colônia Tia Nalda</h1>
             <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto; color: #555;">
@@ -108,16 +195,16 @@
                 <div class="footer-col">
                     <h4>Contato</h4>
                     <p>Dúvidas sobre o projeto?</p>
-                    <p><i class="fas fa-envelope"></i> contato@seusite.com.br</p>
-                    <p><i class="fas fa-phone"></i> (88) 99999-9999</p>
+                    <p><i class="fas fa-envelope"></i> projetostianalda@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> (85) 98162-1882</p>
                 </div>
 
                 <div class="footer-col">
                     <h4>Siga-nos</h4>
                     <div class="social-links">
-                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/coloniatianalda?igsh=MTcxNjdsd3k0NmxsMA==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#" target="_blank"><i class="fab fa-facebook"></i></a> -->
+                        <a href="https://youtube.com/@tianaldaalencar6743?si=i2dZIbt-9EKC0Ncz" target="_blank"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
 
@@ -131,5 +218,6 @@
 </body>
 
 <script src="JS/navbar.js"></script>
+<script src="JS/carrosel.js"></script>
 
 </html>

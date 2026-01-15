@@ -1,0 +1,110 @@
+/* === ESTILOS DO CARROSSEL === */
+.galeria-section {
+    padding: 50px 5%;
+    background-color: #fffaf0; /* Mesmo fundo creme da Hero */
+}
+
+.carrossel-container {
+    max-width: 800px; /* Tamanho máximo do carrossel */
+    position: relative;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden; /* Garante que a imagem não saia da borda */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.slides-wrapper {
+    background-color: #000; /* Fundo preto para imagens que não preenchem tudo */
+}
+
+.slide {
+    display: none; /* Esconde todos por padrão (o JS mostra o certo) */
+}
+
+.slide img {
+    width: 100%;
+    height: 500px; /* Altura fixa para manter o padrão */
+    object-fit: cover; /* Corta a imagem para preencher sem esticar */
+    display: block;
+}
+
+/* Legenda da foto */
+.legenda {
+    color: #f2f2f2;
+    font-family: "Neucha", sans-serif;
+    font-size: 1.5rem;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+}
+
+/* Botões Anterior e Próximo */
+.prev-btn, .next-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.3); /* Fundo leve */
+    border: none;
+}
+
+.next-btn {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Bolinhas Indicadoras */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #c63d36; /* Cor vermelha do tema quando ativo */
+}
+
+/* Efeito de Fade (Transição suave) */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Ajuste para celular */
+@media (max-width: 768px) {
+    .slide img {
+        height: 300px; /* Altura menor no celular */
+    }
+    .prev-btn, .next-btn {
+        padding: 10px; /* Botões menores */
+    }
+    .legenda {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
